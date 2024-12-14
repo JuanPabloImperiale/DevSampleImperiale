@@ -1,0 +1,14 @@
+/Users/juanpiimperiale/Desktop/DevSampleImperiale/bin/Debug/net9.0/DevSampleImperiale
+/Users/juanpiimperiale/Desktop/DevSampleImperiale/bin/Debug/net9.0/DevSampleImperiale.deps.json
+/Users/juanpiimperiale/Desktop/DevSampleImperiale/bin/Debug/net9.0/DevSampleImperiale.runtimeconfig.json
+/Users/juanpiimperiale/Desktop/DevSampleImperiale/bin/Debug/net9.0/DevSampleImperiale.dll
+/Users/juanpiimperiale/Desktop/DevSampleImperiale/bin/Debug/net9.0/DevSampleImperiale.pdb
+/Users/juanpiimperiale/Desktop/DevSampleImperiale/obj/Debug/net9.0/DevSampleImperiale.GeneratedMSBuildEditorConfig.editorconfig
+/Users/juanpiimperiale/Desktop/DevSampleImperiale/obj/Debug/net9.0/DevSampleImperiale.AssemblyInfoInputs.cache
+/Users/juanpiimperiale/Desktop/DevSampleImperiale/obj/Debug/net9.0/DevSampleImperiale.AssemblyInfo.cs
+/Users/juanpiimperiale/Desktop/DevSampleImperiale/obj/Debug/net9.0/DevSampleImperiale.csproj.CoreCompileInputs.cache
+/Users/juanpiimperiale/Desktop/DevSampleImperiale/obj/Debug/net9.0/DevSampleImperiale.dll
+/Users/juanpiimperiale/Desktop/DevSampleImperiale/obj/Debug/net9.0/refint/DevSampleImperiale.dll
+/Users/juanpiimperiale/Desktop/DevSampleImperiale/obj/Debug/net9.0/DevSampleImperiale.pdb
+/Users/juanpiimperiale/Desktop/DevSampleImperiale/obj/Debug/net9.0/DevSampleImperiale.genruntimeconfig.cache
+/Users/juanpiimperiale/Desktop/DevSampleImperiale/obj/Debug/net9.0/ref/DevSampleImperiale.dll
