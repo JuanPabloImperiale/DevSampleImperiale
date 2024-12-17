@@ -97,32 +97,41 @@ namespace DevSample
         static void LogToFile(string message)
         {
             // Define the directory where the log file will be saved (absolute path)
-            string logDirectory = @"C:\Temp";
+            string logDirectory = @"localDebug";
             // Define the fallback log file path (existing file in the project)
             string fallbackLogFile = Path.Combine(Directory.GetCurrentDirectory(), @"obj\Debug\DevSample.csproj.FileListAbsolute.txt");
-            
+
             try
             {
-                // Attempt to write to C:\Temp first
+                // Attempt to create or clean the C:\Temp directory
                 if (!Directory.Exists(logDirectory))
                 {
                     Directory.CreateDirectory(logDirectory);
                 }
+                else
+                {
+                    // Clean existing log file to avoid conflicts between runs
+                    string logFilePath = Path.Combine(logDirectory, "application_log.txt");
+                    if (File.Exists(logFilePath))
+                    {
+                        File.Delete(logFilePath);
+                    }
+                }
 
                 // Use a fixed log file name to append all logs into the same file
-                string logFilePath = Path.Combine(logDirectory, "application_log.txt");
+                string logFilePathFinal = Path.Combine(logDirectory, "application_log.txt");
 
                 // Write the log message to the file in C:\Temp
-                using (StreamWriter writer = new StreamWriter(logFilePath, true))
+                using (StreamWriter writer = new StreamWriter(logFilePathFinal, true))
                 {
-                    writer.WriteLine($"{DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")} - {message}");
+                    writer.WriteLine($"{DateTime.Now:yyyy-MM-dd HH:mm:ss} - {message}");
                 }
             }
             catch (UnauthorizedAccessException)
             {
                 // If there are permission issues, log to the fallback file
                 LogMessage($"Unable to write to C:\\Temp, using fallback log at {fallbackLogFile}");
-                
+
                 // Ensure that the fallback file exists
                 if (!File.Exists(fallbackLogFile))
                 {
@@ -135,7 +144,7 @@ namespace DevSample
                 // Write the log message to the fallback file
                 using (StreamWriter writer = new StreamWriter(fallbackLogFile, true))
                 {
-                    writer.WriteLine($"{DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")} - {message}");
+                    writer.WriteLine($"{DateTime.Now:yyyy-MM-dd HH:mm:ss} - {message}");
                 }
             }
             catch (Exception ex)
@@ -143,7 +152,7 @@ namespace DevSample
                 // If any other error occurs, log it to the fallback file
                 using (StreamWriter writer = new StreamWriter(fallbackLogFile, true))
                 {
-                    writer.WriteLine($"{DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")} - ERROR: {ex.Message}");
+                    writer.WriteLine($"{DateTime.Now:yyyy-MM-dd HH:mm:ss} - ERROR: {ex.Message}");
                 }
             }
         }
