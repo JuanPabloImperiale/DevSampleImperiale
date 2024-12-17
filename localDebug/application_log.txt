@@ -1,0 +1,82 @@
+2024-12-17 12:34:50 - Execution Finished. Total Elapsed Time: 10,640.797 ms.
+2024-12-17 12:36:47 - Starting Execution on a 10 core system. A total of 4 cycles will be run
+2024-12-17 12:36:47 - Cycle 0 Started Sample Load.
+2024-12-17 12:36:47 - Cycle 0 Finished Sample Load. Load Time: 447.692 ms.
+2024-12-17 12:36:47 - Cycle 0 Started Sample Validation.
+2024-12-17 12:36:49 - Cycle 0 Finished Sample Validation. Total Samples Validated: 222222. Validation Time: 2,232.679 ms.
+2024-12-17 12:36:49 - Cycle 0 Sum of All Samples: 13,948,153,265,388,564,222.00000000000000000000.
+2024-12-17 12:36:49 - Cycle 0 Finished. Total Cycle Time: 2,232.679 ms.
+2024-12-17 12:36:49 - Cycle 1 Started Sample Load.
+2024-12-17 12:36:50 - Cycle 1 Finished Sample Load. Load Time: 460.824 ms.
+2024-12-17 12:36:50 - Cycle 1 Started Sample Validation.
+2024-12-17 12:36:52 - Cycle 1 Finished Sample Validation. Total Samples Validated: 222222. Validation Time: 2,236.722 ms.
+2024-12-17 12:36:52 - Cycle 1 Sum of All Samples: 13,948,153,265,388,564,222.00000000000000000000.
+2024-12-17 12:36:52 - Cycle 1 Finished. Total Cycle Time: 2,236.722 ms.
+2024-12-17 12:36:52 - Cycle 2 Started Sample Load.
+2024-12-17 12:36:53 - Cycle 2 Finished Sample Load. Load Time: 457.255 ms.
+2024-12-17 12:36:53 - Cycle 2 Started Sample Validation.
+2024-12-17 12:36:55 - Cycle 2 Finished Sample Validation. Total Samples Validated: 222222. Validation Time: 2,226.463 ms.
+2024-12-17 12:36:55 - Cycle 2 Sum of All Samples: 13,948,153,265,388,564,222.00000000000000000000.
+2024-12-17 12:36:55 - Cycle 2 Finished. Total Cycle Time: 2,226.463 ms.
+2024-12-17 12:36:55 - Cycle 3 Started Sample Load.
+2024-12-17 12:36:55 - Cycle 3 Finished Sample Load. Load Time: 458.936 ms.
+2024-12-17 12:36:55 - Cycle 3 Started Sample Validation.
+2024-12-17 12:36:57 - Cycle 3 Finished Sample Validation. Total Samples Validated: 222222. Validation Time: 2,230.316 ms.
+2024-12-17 12:36:57 - Cycle 3 Sum of All Samples: 13,948,153,265,388,564,222.00000000000000000000.
+2024-12-17 12:36:57 - Cycle 3 Finished. Total Cycle Time: 2,230.316 ms.
+2024-12-17 12:36:57 - -----
+2024-12-17 12:36:57 - Execution Finished. Total Elapsed Time: 10,795.217 ms.
+2024-12-17 12:39:27 - Starting Execution on a 10 core system. A total of 4 cycles will be run
+2024-12-17 12:39:27 - Cycle 0 Started Sample Load.
+2024-12-17 12:39:27 - Cycle 0 Finished Sample Load. Load Time: 454.201 ms.
+2024-12-17 12:39:27 - Cycle 0 Started Sample Validation.
+2024-12-17 12:39:30 - Cycle 0 Finished Sample Validation. Total Samples Validated: 222222. Validation Time: 2,174.874 ms.
+2024-12-17 12:39:30 - Cycle 0 Sum of All Samples: 13,948,153,265,388,564,222.00000000000000000000.
+2024-12-17 12:39:30 - Cycle 0 Finished. Total Cycle Time: 2,174.874 ms.
+2024-12-17 12:39:30 - Cycle 1 Started Sample Load.
+2024-12-17 12:39:30 - Cycle 1 Finished Sample Load. Load Time: 458.130 ms.
+2024-12-17 12:39:30 - Cycle 1 Started Sample Validation.
+2024-12-17 12:39:32 - Cycle 1 Finished Sample Validation. Total Samples Validated: 222222. Validation Time: 2,242.591 ms.
+2024-12-17 12:39:32 - Cycle 1 Sum of All Samples: 13,948,153,265,388,564,222.00000000000000000000.
+2024-12-17 12:39:32 - Cycle 1 Finished. Total Cycle Time: 2,242.591 ms.
+2024-12-17 12:39:32 - Cycle 2 Started Sample Load.
+2024-12-17 12:39:33 - Cycle 2 Finished Sample Load. Load Time: 456.598 ms.
+2024-12-17 12:39:33 - Cycle 2 Started Sample Validation.
+2024-12-17 12:39:35 - Cycle 2 Finished Sample Validation. Total Samples Validated: 222222. Validation Time: 2,219.368 ms.
+2024-12-17 12:39:35 - Cycle 2 Sum of All Samples: 13,948,153,265,388,564,222.00000000000000000000.
+2024-12-17 12:39:35 - Cycle 2 Finished. Total Cycle Time: 2,219.368 ms.
+2024-12-17 12:39:35 - Cycle 3 Started Sample Load.
+2024-12-17 12:39:35 - Cycle 3 Finished Sample Load. Load Time: 451.468 ms.
+2024-12-17 12:39:35 - Cycle 3 Started Sample Validation.
+2024-12-17 12:39:38 - Cycle 3 Finished Sample Validation. Total Samples Validated: 222222. Validation Time: 2,184.632 ms.
+2024-12-17 12:39:38 - Cycle 3 Sum of All Samples: 13,948,153,265,388,564,222.00000000000000000000.
+2024-12-17 12:39:38 - Cycle 3 Finished. Total Cycle Time: 2,184.632 ms.
+2024-12-17 12:39:38 - -----
+2024-12-17 12:39:38 - Execution Finished. Total Elapsed Time: 10,681.705 ms.
+2024-12-17 12:41:08 - Starting Execution on a 10 core system. A total of 4 cycles will be run
+2024-12-17 12:41:08 - Cycle 0 Started Sample Load.
+2024-12-17 12:41:09 - Cycle 0 Finished Sample Load. Load Time: 445.636 ms.
+2024-12-17 12:41:09 - Cycle 0 Started Sample Validation.
+2024-12-17 12:41:11 - Cycle 0 Finished Sample Validation. Total Samples Validated: 222222. Validation Time: 2,175.079 ms.
+2024-12-17 12:41:11 - Cycle 0 Sum of All Samples: 13,949,634,737,240,424,222.00000000000000000000.
+2024-12-17 12:41:11 - Cycle 0 Finished. Total Cycle Time: 2,175.079 ms.
+2024-12-17 12:41:11 - Cycle 1 Started Sample Load.
+2024-12-17 12:41:12 - Cycle 1 Finished Sample Load. Load Time: 448.439 ms.
+2024-12-17 12:41:12 - Cycle 1 Started Sample Validation.
+2024-12-17 12:41:14 - Cycle 1 Finished Sample Validation. Total Samples Validated: 222222. Validation Time: 2,177.710 ms.
+2024-12-17 12:41:14 - Cycle 1 Sum of All Samples: 13,949,634,737,240,424,222.00000000000000000000.
+2024-12-17 12:41:14 - Cycle 1 Finished. Total Cycle Time: 2,177.710 ms.
+2024-12-17 12:41:14 - Cycle 2 Started Sample Load.
+2024-12-17 12:41:14 - Cycle 2 Finished Sample Load. Load Time: 451.333 ms.
+2024-12-17 12:41:14 - Cycle 2 Started Sample Validation.
+2024-12-17 12:41:16 - Cycle 2 Finished Sample Validation. Total Samples Validated: 222222. Validation Time: 2,173.910 ms.
+2024-12-17 12:41:16 - Cycle 2 Sum of All Samples: 13,949,634,737,240,424,222.00000000000000000000.
+2024-12-17 12:41:16 - Cycle 2 Finished. Total Cycle Time: 2,173.910 ms.
+2024-12-17 12:41:16 - Cycle 3 Started Sample Load.
+2024-12-17 12:41:17 - Cycle 3 Finished Sample Load. Load Time: 449.000 ms.
+2024-12-17 12:41:17 - Cycle 3 Started Sample Validation.
+2024-12-17 12:41:19 - Cycle 3 Finished Sample Validation. Total Samples Validated: 222222. Validation Time: 2,167.165 ms.
+2024-12-17 12:41:19 - Cycle 3 Sum of All Samples: 13,949,634,737,240,424,222.00000000000000000000.
+2024-12-17 12:41:19 - Cycle 3 Finished. Total Cycle Time: 2,167.165 ms.
+2024-12-17 12:41:19 - -----
+2024-12-17 12:41:19 - Execution Finished. Total Elapsed Time: 10,531.006 ms.
