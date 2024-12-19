@@ -31,64 +31,57 @@ namespace DevSample
             Stopwatch totalMonitor = new Stopwatch();
             totalMonitor.Start();
             LogMessage($"Starting Execution on a {Environment.ProcessorCount} core system. A total of {_cyclesToRun} cycles will be run");
-            for (int i = 0; i < _cyclesToRun; i++)
+
+            // Use Parallel.ForEach with a specified MaxDegreeOfParallelism to control CPU usage
+            var cycleIndices = Enumerable.Range(0, _cyclesToRun); // Generate cycle indices
+            ParallelOptions parallelOptions = new ParallelOptions
+            {
+                MaxDegreeOfParallelism = 4 // Limit to 4 concurrent tasks
+            };
+            Parallel.ForEach(cycleIndices, parallelOptions, i =>
             {
                 try
                 {
                     TimeSpan cycleElapsedTime = new TimeSpan();
-                    // Initialize a stopwatch to measure elapsed time for the cycle
                     Stopwatch cycleTimer = new Stopwatch();
                     // Create a sample generator with the specified start date and increment
                     SampleGenerator sampleGenerator = new SampleGenerator(_sampleStartDate, _sampleIncrement);
-
                     // Log the start of the sample load process
                     LogMessage($"Cycle {i} Started Sample Load.");
-                    // Start the stopwatch to measure sample loading time
                     cycleTimer.Start();
                     // Load the specified number of samples
                     sampleGenerator.LoadSamples(_samplesToLoad);
-                    // Stop the stopwatch after loading samples
                     cycleTimer.Stop();
-                    // Store the elapsed time for loading samples
+                    // Store and log the elapsed time for loading samples
                     cycleElapsedTime = cycleTimer.Elapsed;
-                    // Log the time taken to load samples
-                    LogMessage($"Cycle {i} Finished Sample Load. Load Time: {cycleElapsedTime.TotalMilliseconds.ToString("N")} ms.");
-
+                    LogMessage($"Cycle {i} Finished Sample Load. Load Time: {cycleElapsedTime.TotalMilliseconds:N} ms.");
                     // Log the start of the sample validation process
                     LogMessage($"Cycle {i} Started Sample Validation.");
-                    // Restart the stopwatch to measure validation time
                     cycleTimer.Restart();
                     // Validate the loaded samples
                     sampleGenerator.ValidateSamples();
-                    // Stop the stopwatch after validation
                     cycleTimer.Stop();
-                    // Store the elapsed time for sample validation
+                    // Store and log the elapsed time for sample validation
                     cycleElapsedTime = cycleTimer.Elapsed;
-                    // Log the time taken and the total validated samples
-                    LogMessage($"Cycle {i} Finished Sample Validation. Total Samples Validated: {sampleGenerator.SamplesValidated}. Validation Time: {cycleElapsedTime.TotalMilliseconds.ToString("N")} ms.");
-                    // Initialize a variable to calculate the sum of sample values (changed from float to decimal for higher precision)
+                    LogMessage($"Cycle {i} Finished Sample Validation. Total Samples Validated: {sampleGenerator.SamplesValidated}. Validation Time: {cycleElapsedTime.TotalMilliseconds:N} ms.");
+                    // Calculate the sum of sample values
                     decimal valueSum = 0;
-                    // Iterate through all samples to calculate the total sum
                     foreach (Sample s in sampleGenerator.Samples)
                     {
-                        //JPI change
-                        valueSum += (decimal)s.Value; // Explicit cast to ensure compatibility with decimal type
+                        valueSum += (decimal)s.Value; // Explicit cast for precision
                     }
-                    //JPI change
-                    // Log the sum of all sample values with 20 digits of precision (format adjusted to show 20 decimal places)
-                    LogMessage($"Cycle {i} Sum of All Samples: {valueSum.ToString("N20")}.");
-                    // Log the total time taken for the cycle
-                    LogMessage($"Cycle {i} Finished. Total Cycle Time: {cycleElapsedTime.TotalMilliseconds.ToString("N")} ms.");
+                    // Log the sum of all sample values with precision
+                    LogMessage($"Cycle {i} Sum of All Samples: {valueSum:N20}.");
+                    LogMessage($"Cycle {i} Finished. Total Cycle Time: {cycleElapsedTime.TotalMilliseconds:N} ms.");
                 }
                 catch (Exception ex)
                 {
-                    LogMessage($"Execution Failed!\n{ex.ToString()}");
+                    LogMessage($"Execution Failed in Cycle {i}!\n{ex}");
                 }
-
-            }
+            });
             totalMonitor.Stop();
             LogMessage("-----");
-            LogMessage($"Execution Finished. Total Elapsed Time: {totalMonitor.Elapsed.TotalMilliseconds.ToString("N")} ms.");
+            LogMessage($"Execution Finished. Total Elapsed Time: {totalMonitor.Elapsed.TotalMilliseconds:N} ms.");
             Console.Read();
         }
         static void LogMessage(string message)
