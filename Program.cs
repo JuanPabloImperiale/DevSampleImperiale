@@ -71,8 +71,10 @@ namespace DevSample
                     // Iterate through all samples to calculate the total sum
                     foreach (Sample s in sampleGenerator.Samples)
                     {
+                        //JPI change
                         valueSum += (decimal)s.Value; // Explicit cast to ensure compatibility with decimal type
                     }
+                    //JPI change
                     // Log the sum of all sample values with 20 digits of precision (format adjusted to show 20 decimal places)
                     LogMessage($"Cycle {i} Sum of All Samples: {valueSum.ToString("N20")}.");
                     // Log the total time taken for the cycle
@@ -97,10 +99,11 @@ namespace DevSample
 
         static void LogToFile(string message)
         {
+            //JPI changes
             // Define the directory where the log file will be saved (absolute path)
             string logDirectory = @"localDebug";
             // Define the fallback log file path (existing file in the project)
-            string fallbackLogFile = Path.Combine(Directory.GetCurrentDirectory(), @"obj\Debug\DevSample.csproj.FileListAbsolute.txt");           
+            string fallbackLogFile = Path.Combine(Directory.GetCurrentDirectory(), @"obj\Debug\DevSample.csproj.FileListAbsolute.txt");
             try
             {
                 // Attempt to write to C:\Temp first
